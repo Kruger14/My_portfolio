@@ -1,0 +1,87 @@
+.home-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    padding: 1rem;
+    background: linear-gradient(to right, #9f7aea, #2779bd);
+}
+
+.section-one p {
+    color: white;
+}
+
+.section-one h1 {
+    color: black;
+    font-family: "Caveat", cursive;
+}
+
+.section-one h2 {
+    color: #c8f31d;
+}
+
+.section-one .role {
+    font-size: 25px;
+    color: black;
+}
+
+.section-one .description {
+    font-size: 1.5rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.hire-btn {
+    padding: 15px;
+    text-align: center;
+    background-color: #c8f31d;
+    border-radius: 16px;
+    text-decoration: none;
+}
+
+.resume-btn {
+    padding: 15px;
+    text-align: center;
+    background-color: #c8f31d;
+    border-radius: 16px;
+    text-decoration: none;
+}
+
+#image {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 768px) {
+    .home-container {
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .section-one h1,
+    .section-one h2,
+    .section-one .role {
+        text-align: center;
+    }
+
+    .section-one .description {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    #image {
+        width: 250px;
+        height: 250px;
+    }
+}

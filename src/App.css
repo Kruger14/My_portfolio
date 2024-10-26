@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+}
+
+.layout {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.nav-container {
+    flex: 1;
+    position: sticky;
+}
+
+.main-container {
+    flex: 5;
+    overflow-x: hidden;
+}
+
+.icon-container {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-container {
+        display: none;
+    }
+
+    .icon-container {
+        background: linear-gradient(to right, #9f7aea, #2779bd);
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        z-index: 999;
+        position: fixed;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .nav-container {
+        display: block;
+    }
+}

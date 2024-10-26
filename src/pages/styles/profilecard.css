@@ -1,0 +1,254 @@
+/* Base Styles */
+.profile-card {
+    width: 20rem;
+    margin: 0 auto;
+    background-color: #ffffff;
+    color: #333333;
+    overflow: hidden;
+    background: #e0e0e0;
+    height: 100vh;
+    width: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.profile-card-header {
+    background: linear-gradient(to right, #9f7aea, #2779bd);
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-image {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-card-body {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.profile-name {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: black;
+}
+
+.profile-role {
+    color: #6b7280;
+    font-weight: 500;
+    color: black;
+}
+
+.profile-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.profile-link {
+    color: #3b82f6;
+    transition: color 0.2s;
+}
+
+.profile-link:hover {
+    color: #2563eb;
+}
+
+.profile-card-info {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.profile-info-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.profile-info-text {
+    color: black;
+}
+
+.profile-card-footer {
+    text-align: center;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-button {
+    display: flex;
+    background-color: #06b6d4;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+    transition: background-color 0.2s;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-button:hover {
+    background-color: rgba(59, 130, 246, 0.8);
+}
+
+/* Responsive Styles */
+@media (max-width: 340px) {
+    a {
+        text-decoration: none;
+    }
+
+    .profile-card {
+        max-width: 100%;
+    }
+
+    .profile-card-header {
+        padding: 1rem;
+    }
+
+    .profile-image {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .profile-card-body {
+        padding: 1rem;
+    }
+
+    .profile-name {
+        font-size: 1rem;
+    }
+
+    .profile-role {
+        font-size: 0.875rem;
+    }
+
+
+    .profile-card-info {
+        padding: 1rem;
+    }
+
+    .profile-info-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-info-text {
+        font-size: 0.875rem;
+    }
+
+    .profile-card-footer {
+        padding: 1rem;
+    }
+
+    .profile-button {
+        padding: 0.5rem;
+        font-size: 0.875rem;
+    }
+}
+
+@media (min-width: 768px) {
+    a {
+        text-decoration: none;
+    }
+
+    .profile-card {
+        max-width: 100%;
+    }
+
+    .profile-card-header {
+        padding: 1rem;
+    }
+
+    .profile-image {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .profile-card-body {
+        padding: 1rem;
+    }
+
+    .profile-name {
+        font-size: 1rem;
+    }
+
+    .profile-role {
+        font-size: 0.875rem;
+    }
+
+
+    .profile-card-info {
+        padding: 1rem;
+    }
+
+    .profile-info-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-info-text {
+        font-size: 0.875rem;
+    }
+
+    .profile-button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 0.875rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .profile-card {
+        max-width: 22rem;
+    }
+
+    .profile-card-header {
+        padding: 1.5rem;
+    }
+
+    .profile-image {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .profile-card-body {
+        padding: 1.5rem;
+    }
+
+    .profile-name {
+        font-size: 1.5rem;
+    }
+
+    .profile-role {
+        font-size: 1.125rem;
+    }
+
+    .profile-links {
+        gap: 1.5rem;
+    }
+
+    .profile-info-text {
+        font-size: 1.5rem;
+    }
+
+    .profile-card-footer {
+        padding: 1.5rem;
+    }
+
+    .profile-button {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.75rem 1.5rem;
+    }
+}
